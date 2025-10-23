@@ -3,7 +3,7 @@ import psycopg
 from flask import Flask, request, jsonify
 
 def get_db_connection():
-    connection = psycopg.connect("postgresql://vituki:qwer4321@localhost:5432/vituki")
+    connection = psycopg.connect("postgresql://username:password@localhost:5432/dbname")
     return connection
 
 app = Flask(__name__)
